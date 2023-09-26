@@ -8,38 +8,37 @@ html{
     scroll-behavior: smooth;
 }
 #logo {
-    margin-left: -40px;
+    float: left !important;
+    /* margin-left: -60px; */
     margin-top: 10px;
 }
 .nav-link {
     color: white !important;
+    font-weight: 900 !important;
 }
 .nav-link:hover {
     color: gold !important;
 }
 #navbar {
     height: 10% !important;
-    /* margin-top: -20px; */
+    margin-top: -50px;
+    margin-right: 5px !important;
     border-radius: 50px !important;
     background-color: rgba(0, 0, 0, 0.2);
 }
+.navbar-nav {
+    float: right;
+    /* margin-right: 20px !important; */
+}
 .section1 {
     color: white !important;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/closeup-female-typing-laptop-keyboard_273609-15506.jpeg);
-    /* height: 1300px; */
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/programming-background-with-person-working-with-codes-computer.jpg);
     background-position: center;
     background-size: cover;
-    width: 100%;
-    /* position: sticky !important; */
-    /* z-index: 0; */
-    /* margin-top: 20px !important; */
-}
-.row {
-    padding-top: 150px !important;
+    width: 100vw;
 }
 #coming-soon{
-    /* margin-top: 30px !important; */
-    text-align: center !important;
+    margin-left: 70px !important;
 }
 .we{
     line-height: 3rem;
@@ -47,15 +46,12 @@ html{
     color:rgb(255, 255, 255);
     font-size: 59px;
     font-weight: 300;
-    /* margin-left: 50px !important;
-    margin-right: 20px !important; */
 } 
 .soon{
     letter-spacing: -5px;
     font-weight: 700;
     color: gold;
     font-size: 140px;
-    /* margin-left: 10px !important; */
 }
 .content1{
     background-color: rgba(0, 0, 0, 0.326);
@@ -85,6 +81,7 @@ html{
 }
 .card2{
     background-color: rgb(247, 221, 72) !important;
+    margin-bottom: 100px !important;
 }
 .card3{
     background-color: rgb(248, 236, 168) !important;
@@ -92,19 +89,27 @@ html{
 .card:hover{
     transform: translateY(-10px);
 }
+#box2 {
+    margin-left: -150px !important;
+}
+#box1{
+    margin-left: 130px !important;
+}
 .section2{
-    padding-left: 8%;
-    padding-right: 8%;
+    /* padding-left: 8%; */
+    /* padding-right: 8%; */
     box-sizing: border-box;
 }
 .abt{
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     background-color: rgb(255, 217, 0);
     box-shadow: 2px 4px 2px rgba(128, 128, 128, 0.151);
     font-family: montserrat;
+    width: 105vw;
     font-size: 35px;
+    margin-left: -120px;
     font-weight: 900;
 }
 #devy-image{
@@ -136,7 +141,8 @@ html{
 footer{
     padding-top: 3rem;
     padding-left: 4rem;
-    height: 900px;
+    margin-bottom: -20px !important;
+    /* height: 900px; */
     margin-top: 3rem;
     width: 100%;
     background-color: black;
@@ -208,18 +214,42 @@ textarea{
 .button2:hover{
     background-color: gold;
 }
-.copyright {
-    margin-top: 60px !important;
+.copy {
+    margin-top: 100px !important;
+    padding-bottom: 100px;
     /* text-align: center; */
 }
 .fa{
     letter-spacing: 3px;
     color: gold;
+    cursor: pointer;
     margin-left: 2.5rem;
     margin-top: 10px !important;
 }
+@media (min-width:1024px) {
+    #box2 {
+        margin-left: -100px !important;
+    }
+    #box1{
+        margin-left: 0px !important;
+    }
+    #about-section {
+        margin-top: 150px !important;
+    }
+    .content1{
+        margin-bottom: 250px !important;
+    }
+    footer {
+        padding-top: 150px !important;
+    }
+    .copy {
+        text-align: center;
+    }
+}
 
-  @media (max-width:500px) {
+
+
+  @media (max-width:600px) {
     /* .copyright p {
         margin-left: -70px;
     } */
@@ -227,7 +257,41 @@ textarea{
         padding-top: 2.5rem;
         padding-left: 1rem;
     }  */ 
+    #logo {
+        margin-left: -30px;
+    }
+    #coming-soon{
+        margin-left: 20px !important;
+    }
     .soon {
      font-size: 100px;
+    }
+    #box2 {
+        margin-left: -70px !important;
+    }
+    #box1{
+        margin-left: 30px !important;
+    }
+    .card{
+        width: 130px !important;
+        height: 140px !important;
+    }
+    .abt {
+        margin-left: -20px;
+    }
+    #devy-image{
+        margin-left: -5rem;
+    }
+    #footer {
+        margin-left: -110px !important;
+    }
+    #name, #email, #msg {
+        width: 70%;
+    }
+    .copy {
+        text-align: center;
+        margin-left: -120px;
+        /* width: 100%; */
+        margin-right: 25px;
     }
 }
